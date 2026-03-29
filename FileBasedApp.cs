@@ -1,5 +1,6 @@
 #:package NewtonSoft.Json@13.0.3
 #:property PublishAot=false
+//#:project C:\Users\test\source\repos\FileBasedApp\FileBasedApp.csproj
 /// <summary>File-based modda varsayýlan Native AOT, reflection ile JsonSerializer kullanýmýný kýrdýðýndan dolayý false'a çekildi.</summary>
 
 using micJson = System.Text.Json;
@@ -28,6 +29,7 @@ string newtonSoftJsonString = NTS.JsonConvert.SerializeObject(models);
 Console.WriteLine($"Microsoft Json Library:{jsonString}");
 Console.WriteLine("--------------------------------------------------");
 Console.WriteLine($"NewtonSoft Library:{newtonSoftJsonString}");
+Console.WriteLine("Press any key to continue");
 Console.ReadKey();
 
 public class TestModel
